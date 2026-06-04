@@ -1,0 +1,88 @@
+/* ═══════════════════════════════════════════════════════
+   CINEMATIC HERO — Premium Editorial Styles
+   NM Odontología · Deep medical blue palette
+   ═══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ── Hero Container ──────────────────────────────── */
+.cinematic-hero {
+  height: 500vh;
+  position: relative;
+}
+
+/* ── Massive editorial headlines ─────────────────── */
+.hero-line1,
+.hero-line2 {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero-line1 {
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  color: #1a2d44;
+}
+
+.hero-line2 {
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  margin-top: 0.06em;
+  /* Premium gradient effect for the second line */
+  background: linear-gradient(
+    135deg,
+    #324D72 0%,
+    #4a6fa0 45%,
+    #324D72 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Responsive adjustments ──────────────────────── */
+@media (max-width: 640px) {
+  .cinematic-hero {
+    height: 400vh;
+  }
+
+  .hero-line1,
+  .hero-line2 {
+    font-size: clamp(1.8rem, 8.5vw, 2.6rem);
+    letter-spacing: -0.035em;
+    line-height: 0.93;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .hero-line1,
+  .hero-line2 {
+    font-size: clamp(2.8rem, 7vw, 4rem);
+    line-height: 0.92;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-line1,
+  .hero-line2 {
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    line-height: 0.9;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-line1,
+  .hero-line2 {
+    font-size: clamp(3.5rem, 4.5vw, 5.5rem);
+    line-height: 0.9;
+  }
+}
+
+/* ── Selection within hero ───────────────────────── */
+.cinematic-hero ::selection {
+  background: rgba(50, 77, 114, 0.18);
+  color: #111827;
+}
